@@ -1,3 +1,8 @@
+This License covers all files within this git repository except for those
+in the "extern" directory.
+
+--------------------------------------------------------------------------
+
 The MIT License (MIT)
 
 Copyright (c) 2016 Chris Cowan <agentme49@gmail.com>
