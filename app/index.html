@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <title>Discord</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval'">
+  <style>
+    body, html {
+      height:100%;
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+  </style>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <webview
+    id="discord" src="https://discordapp.com/channels/@me"
+    allowpopups
+    style="overflow: hidden; width:100%; height:100%;"
+  >
+  </webview>
+</body>
+</html>
