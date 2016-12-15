@@ -3,20 +3,12 @@ const {app, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
 
-// require('electron-context-menu')({
-//   prepend: (params, browserWindow) => [{
-//     label: 'Rainbow',
-//     // only show it when right-clicking images
-//     visible: params.mediaType === 'image'
-//   }]
-// });
-
 app.on('ready', () => {
   const win = new BrowserWindow({
     width: 1024,
     height: 768,
     icon: path.join(__dirname, 'extern/icon.png'),
-    title: "Discord"
+    title: 'Discord'
   });
 
   win.loadURL(url.format({

@@ -5,7 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
   },
   "bin": "./bin/cli.js",
   "repository": {
@@ -24,5 +26,8 @@
     "electron": "^1.4.12",
     "electron-context-menu": "^0.8.0",
     "kefir": "^3.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2"
   }
 }
