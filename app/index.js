@@ -8,6 +8,10 @@
   document.addEventListener('DOMContentLoaded', () => {
     const webview = document.getElementById('discord');
 
+    window.addEventListener('focus', () => {
+      webview.focus();
+    });
+
     webview.addEventListener('new-window', e => {
       const {protocol} = url.parse(e.url);
       if (protocol === 'http:' || protocol === 'https:') {
